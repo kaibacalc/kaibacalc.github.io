@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  font-weight: bold;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.card {
+  height: 50%;
+  background-color: #333333;
+  color: #fff;
+}
+
+.card-header {
+  background-color: #333333;
+  color: #fff;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  border: none;
+}
+
+.card-footer-item {
+  border: none;
+}
+
+.card-footer-item:not(:last-child) {
+  border: none;
+}
+
+.duellistName {
+  padding: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.duellistName:focus {
+  outline: none;
+}
+
+.lifePoints {
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.changeLifePoints {
+  border-radius: 10px;
+  background-color: #555;
+  width: calc(100% - 10px);
+  height: 50px;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: 0.2s all ease;
+}
+
+.changeLifePoints:focus {
+  background-color: #888;
+  outline: none;
+}
+.legalLink,
+.reloadGame {
+  position: absolute;
+  top: 5px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  width: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.legalLink {
+  left: 5px;
+}
+
+.reloadGame {
+  right: 5px;
+}
+
+.reloadGame:focus,
+.legalLink:focus {
+  outline: none;
+}

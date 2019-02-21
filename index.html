@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="images/icons-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/icons-512.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Kaiba Calculator</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="card">
+    <header class="card-header">
+      <input type="text" class="duellistName" placeholder="Player 1"></p>
+    </header>
+    <div class="card-content">
+      <p class="lifePoints" id="lifePoints1"></p>
+    </div>
+    <footer class="card-footer">
+      <a href="#" class="card-footer-item" onclick="subLifePoints(1);">-</a>
+      <input class="card-footer-item changeLifePoints" id="changeLifePoints1" type="tel" placeholder="0" />
+      <a href="#" class="card-footer-item" onclick="addLifePoints(1);">+</a>
+    </footer>
+  </div>
+
+  <div class="card">
+  <header class="card-header">
+    <input type="text" class="duellistName" placeholder="Player 2">
+    <button class="legalLink" onclick="javascript:location.href='legal.html'"><i class="fas fa-info"></i></button>
+    <button class="reloadGame" onclick="reloadGame();"><i class="fas fa-redo-alt"></i></button>
+  </header>
+  <div class="card-content">
+    <p class="lifePoints" id="lifePoints2"></p>
+  </div>
+  <footer class="card-footer">
+    <a href="#" class="card-footer-item" onclick="subLifePoints(2);">-</a>
+    <input class="card-footer-item changeLifePoints" id="changeLifePoints2" type="tel" placeholder="0" />
+    <a href="#" class="card-footer-item" onclick="addLifePoints(2);">+</a>
+  </footer>
+</div>
+  </body>
+</html>
