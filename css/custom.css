@@ -59,7 +59,7 @@ a:hover {
 
 .lifePoints {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 7em;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
@@ -92,15 +92,16 @@ a:hover {
   padding-bottom: 10px;
   border-radius: 10px;
   font-size: 1.2em;
+  text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .legalLink {
-  left: 5px;
+  left: 20px;
 }
 
 .reloadGame {
-  right: 5px;
+  right: 20px;
 }
 
 .reloadGame:focus,
