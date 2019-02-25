@@ -2,31 +2,38 @@ html,
 body {
   height: 100%;
   overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a {
   font-weight: bold;
-  color: #fff;
+  color: #fafafb;
 }
 
 a:hover {
-  color: #fff;
+  color: #fafafb;
 }
 
 .card {
   height: 50%;
-  background-color: #333333;
-  color: #fff;
+  background: #333;
+  color: #fafafb;
 }
 
 .card-header {
   background-color: #333333;
-  color: #fff;
+  color: #fafafb;
+  box-shadow: none;
 }
 
 .card-footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   left: 0px;
   width: 100%;
   border: none;
@@ -48,7 +55,7 @@ a:hover {
   margin-right: auto;
   background-color: #333;
   border: none;
-  color: #fff;
+  color: #fafafb;
   text-align: center;
   font-size: 1.3em;
 }
@@ -61,15 +68,15 @@ a:hover {
   font-weight: bold;
   font-size: 7em;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  color: #fafafb;
 }
 
 .changeLifePoints {
   border-radius: 10px;
-  background-color: #555;
+  background: #555;
   width: calc(100% - 10px);
   height: 50px;
-  color: #fff;
+  color: #fafafb;
   font-size: 2em;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -81,11 +88,13 @@ a:hover {
   outline: none;
 }
 .legalLink,
-.reloadGame {
+.reloadGame,
+.coin,
+.dice {
   position: absolute;
   top: 5px;
   background-color: #555;
-  color: #fff;
+  color: #fafafb;
   border: none;
   width: 45px;
   padding-top: 10px;
@@ -96,15 +105,30 @@ a:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.legalLink {
+.legalLink,
+.coin {
   left: 20px;
 }
 
-.reloadGame {
+.reloadGame,
+.dice {
   right: 20px;
 }
 
 .reloadGame:focus,
-.legalLink:focus {
+.legalLink:focus,
+.dice:focus,
+.coin:focus {
   outline: none;
+}
+
+button svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+audio {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
 }

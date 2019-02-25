@@ -11,7 +11,3 @@ Just open this [link](https://kaibacalc.github.io/) in your browser
 
 * [Bulma](https://bulma.io) - CSS framework
 * [Font Awesome](https://fontawesome.com) - Icon font
-
-## Authors
-
-* **Johannes Nilsson**
