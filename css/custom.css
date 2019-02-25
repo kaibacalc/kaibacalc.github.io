@@ -21,19 +21,19 @@ a:hover {
 
 .card {
   height: 50%;
-  background: #333;
+  background: #000;
   color: #fafafb;
 }
 
 .card-header {
-  background-color: #333333;
+  background-color: #000;
   color: #fafafb;
   box-shadow: none;
 }
 
 .card-footer {
   position: absolute;
-  bottom: 25px;
+  bottom: 35px;
   left: 0px;
   width: 100%;
   border: none;
@@ -49,11 +49,12 @@ a:hover {
 
 .duellistName {
   padding: 0.7em;
+  margin-top: 10px;
   font-weight: bold;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  background-color: #333;
+  background-color: #000;
   border: none;
   color: #fafafb;
   text-align: center;
@@ -66,7 +67,7 @@ a:hover {
 
 .lifePoints {
   font-weight: bold;
-  font-size: 7em;
+  font-size: 6em;
   text-align: center;
   color: #fafafb;
 }
@@ -92,7 +93,7 @@ a:hover {
 .coin,
 .dice {
   position: absolute;
-  top: 5px;
+  top: 15px;
   background-color: #555;
   color: #fafafb;
   border: none;
