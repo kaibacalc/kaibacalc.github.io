@@ -10,6 +10,11 @@ body {
   user-select: none;
 }
 
+img,
+svg {
+  height: 32px;
+}
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #F4957F;
 }
@@ -34,22 +39,22 @@ body {
 
 a {
   font-weight: bold;
-  color: #fafafb;
+  color: #333;
 }
 
 a:hover {
-  color: #fafafb;
+  color: #333;
 }
 
 .card {
   height: 50%;
-  background: #000;
-  color: #fafafb;
+  background: #efefef;
+  color: #333;
 }
 
 .card-header {
-  background-color: #000;
-  color: #fafafb;
+  background-color: #efefef;
+  color: #333;
   box-shadow: none;
 }
 
@@ -76,7 +81,7 @@ a:hover {
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  background-color: #000;
+  background-color: #efefef;
   border: none;
   color: #F4957F;
   text-align: center;
@@ -91,7 +96,7 @@ a:hover {
   font-weight: bold;
   font-size: 6em;
   text-align: center;
-  color: #fafafb;
+  color: #333;
 }
 
 @media only screen and (max-height: 670px) {
@@ -114,14 +119,12 @@ a:hover {
 
 .changeLifePoints {
   border-radius: 10px;
-  background: #000;
+  background: #efefef;
   width: calc(100% - 10px);
   height: 50px;
   color: #F4957F;
   font-size: 2em;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: 0.2s all ease;
 }
 
 .changeLifePoints:focus {
@@ -138,7 +141,7 @@ a:hover {
   position: inherit;
   width: 300px;
   bottom: 35px;
-  background-color: #333;
+  background-color: #fff;
   margin-left: calc(50% - 150px);
   padding: 10px;
   border-radius: 10px;
@@ -146,16 +149,11 @@ a:hover {
 
 .menuIcon {
   color: #F4957F;
-  background-color: #333;
+  background-color: #fff;
   border: none;
-  width: 45px;
-  margin-right: 35px;
+  width: 25%;
   font-size: 1.2em;
   text-align: center;
-}
-
-.menuIcon.last {
-  margin-right: 0px;
 }
 
 .menuIcon:focus {
