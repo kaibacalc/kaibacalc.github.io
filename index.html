@@ -16,11 +16,13 @@
     <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
+    <audio id="audioNew" src="sounds/lets_duel.mp3" ></audio>
+    <audio id="audioChange" src="sounds/points_drop.mp3" ></audio>
+
     <div class="card">
     <header class="card-header">
       <input type="text" class="duellistName" placeholder="Player 1"></p>
-      <button class="legalLink" onclick="javascript:location.href='legal.html'"><i class="fas fa-info"></i></button>
-      <button class="reloadGame" onclick="reloadGame();"><i class="fas fa-redo-alt"></i></button>
+
     </header>
     <div class="card-content">
       <p class="lifePoints" id="lifePoints1"></p>
@@ -35,10 +37,7 @@
   <div class="card">
   <header class="card-header">
     <input type="text" class="duellistName" placeholder="Player 2">
-    <button class="coin" onclick="coin()"><i class="fas fa-dollar-sign"></i></button>
-    <button class="dice" onclick="dice();"><i class="fas fa-dice"></i></button>
-    <audio id="audioNew" src="sounds/lets_duel.mp3" ></audio>
-    <audio id="audioChange" src="sounds/points_drop.mp3" ></audio>
+
   </header>
   <div class="card-content">
     <p class="lifePoints" id="lifePoints2"></p>
@@ -47,6 +46,14 @@
     <a href="#" class="card-footer-item" onclick="subLifePoints(2);">-</a>
     <input class="card-footer-item changeLifePoints" id="changeLifePoints2" type="tel" placeholder="0" />
     <a href="#" class="card-footer-item" onclick="addLifePoints(2);">+</a>
+  </footer>
+</div>
+<div class="menu">
+  <footer class="card-footer">
+    <button class="menuIcon" onclick="coin()"><i class="fas fa-dollar-sign"></i></button>
+    <button class="menuIcon" onclick="dice();"><i class="fas fa-dice"></i></button>
+    <button class="menuIcon" onclick="javascript:location.href='legal.html'"><i class="fas fa-info"></i></button>
+    <button class="menuIcon last" onclick="reloadGame();"><i class="fas fa-redo-alt"></i></button>
   </footer>
 </div>
   </body>

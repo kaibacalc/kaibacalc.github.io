@@ -10,6 +10,28 @@ body {
   user-select: none;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #F4957F;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #F4957F;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #F4957F;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #F4957F;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #F4957F;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #F4957F;
+}
+
 a {
   font-weight: bold;
   color: #fafafb;
@@ -33,7 +55,7 @@ a:hover {
 
 .card-footer {
   position: absolute;
-  bottom: 35px;
+  bottom: 115px;
   left: 0px;
   width: 100%;
   border: none;
@@ -56,7 +78,7 @@ a:hover {
   margin-right: auto;
   background-color: #000;
   border: none;
-  color: #fafafb;
+  color: #F4957F;
   text-align: center;
   font-size: 1.3em;
 }
@@ -72,12 +94,30 @@ a:hover {
   color: #fafafb;
 }
 
+@media only screen and (max-height: 670px) {
+  .lifePoints {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  .lifePoints {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-height: 568px) {
+  .lifePoints {
+    font-size: 1em;
+  }
+}
+
 .changeLifePoints {
   border-radius: 10px;
-  background: #555;
+  background: #000;
   width: calc(100% - 10px);
   height: 50px;
-  color: #fafafb;
+  color: #F4957F;
   font-size: 2em;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -85,41 +125,40 @@ a:hover {
 }
 
 .changeLifePoints:focus {
-  background-color: #888;
   outline: none;
 }
-.legalLink,
-.reloadGame,
-.coin,
-.dice {
-  position: absolute;
-  top: 15px;
-  background-color: #555;
-  color: #fafafb;
+
+.menu {
+  position: fixed;
+  bottom: 35px;
+  width: 100%;
+}
+
+.menu .card-footer {
+  position: inherit;
+  width: 300px;
+  bottom: 35px;
+  background-color: #333;
+  margin-left: calc(50% - 150px);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menuIcon {
+  color: #F4957F;
+  background-color: #333;
   border: none;
   width: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
+  margin-right: 35px;
   font-size: 1.2em;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.legalLink,
-.coin {
-  left: 20px;
+.menuIcon.last {
+  margin-right: 0px;
 }
 
-.reloadGame,
-.dice {
-  right: 20px;
-}
-
-.reloadGame:focus,
-.legalLink:focus,
-.dice:focus,
-.coin:focus {
+.menuIcon:focus {
   outline: none;
 }
 
