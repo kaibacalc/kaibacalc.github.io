@@ -15,31 +15,14 @@ svg {
   height: 32px;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #F4957F;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #F4957F;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #F4957F;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #F4957F;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #F4957F;
-}
-
 ::placeholder { /* Most modern browsers support this now. */
-   color:    #F4957F;
+   color:    #659FD1;
 }
 
 a {
   font-weight: bold;
-  color: #333;
+  color: #fafafb;
+  font-size: 35px;
 }
 
 a:hover {
@@ -48,12 +31,16 @@ a:hover {
 
 .card {
   height: 50%;
-  background: #efefef;
+  background: #181818;
   color: #333;
 }
 
+#player1 {
+  transform: rotate(180deg);
+}
+
 .card-header {
-  background-color: #efefef;
+  background-color: #181818;
   color: #333;
   box-shadow: none;
 }
@@ -68,10 +55,17 @@ a:hover {
 
 .card-footer-item {
   border: none;
+  padding: 0px;
 }
 
 .card-footer-item:not(:last-child) {
   border: none;
+}
+
+#player1 .duellistName,
+#player1 .changeLifePoints,
+#player1 ::placeholder {
+  color: #EE5C5D;
 }
 
 .duellistName {
@@ -81,9 +75,9 @@ a:hover {
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  background-color: #efefef;
+  background-color: #181818;
+  color: #659FD1;
   border: none;
-  color: #F4957F;
   text-align: center;
   font-size: 1.3em;
 }
@@ -96,7 +90,7 @@ a:hover {
   font-weight: bold;
   font-size: 6em;
   text-align: center;
-  color: #333;
+  color: #fafafb;
 }
 
 @media only screen and (max-height: 670px) {
@@ -119,10 +113,10 @@ a:hover {
 
 .changeLifePoints {
   border-radius: 10px;
-  background: #efefef;
+  background: #282828;
   width: calc(100% - 10px);
   height: 50px;
-  color: #F4957F;
+  color: #659FD1;
   font-size: 2em;
   text-align: center;
 }
@@ -141,15 +135,15 @@ a:hover {
   position: inherit;
   width: 300px;
   bottom: 35px;
-  background-color: #fff;
+  background-color: #282828;
   margin-left: calc(50% - 150px);
   padding: 10px;
   border-radius: 10px;
 }
 
 .menuIcon {
-  color: #F4957F;
-  background-color: #fff;
+  color: #EE5C5D;
+  background-color: #282828;
   border: none;
   width: 25%;
   font-size: 1.2em;
